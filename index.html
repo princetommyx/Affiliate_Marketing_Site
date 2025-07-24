@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Best affiliate products with honest reviews">
-    <title>AffiliatePro - Top Rated Products</title>
-    
-    <!-- Bootstrap CSS CDN -->
+    <title>Amazon Affiliate - Best Tech Deals</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">AffiliatePro</a>
+            <a class="navbar-brand" href="#">🔥 Amazon Deals</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,150 +25,266 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Deals</a>
+                        <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex ms-3">
-                    <input class="form-control me-2" type="search" placeholder="Search products...">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1>Discover Amazing Products</h1>
-                    <p class="lead">We test and review products so you don't have to. Find your perfect match today!</p>
-                    <a href="#featured" class="btn btn-primary btn-lg">View Top Picks</a>
+        <div class="hero-container">
+            <!-- Hero Content -->
+            <div class="hero-content text-white">
+                <h1 class="display-3 fw-bold mb-3">Amazon Prime Day Deals</h1>
+                <p class="lead mb-4">Exclusive affiliate offers on the best tech products</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-timer mb-4">
+                    <div class="timer-box">
+                        <span id="days">00</span>
+                        <small>Days</small>
+                    </div>
+                    <div class="timer-box">
+                        <span id="hours">00</span>
+                        <small>Hours</small>
+                    </div>
+                    <div class="timer-box">
+                        <span id="minutes">00</span>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="timer-box">
+                        <span id="seconds">00</span>
+                        <small>Seconds</small>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Hero image" class="img-fluid rounded">
+                
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-warning btn-lg me-3">
+                        <i class="fas fa-bolt me-2"></i>Shop Deals
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-crown me-2"></i>Join Prime
+                    </a>
                 </div>
             </div>
+            
+            <!-- Hero Image (shown on larger screens) -->
+            <div class="hero-image d-none d-lg-block">
+                <img src="https://via.placeholder.com/600x400?text=Featured+Products" alt="Featured Amazon Products" class="img-fluid">
+            </div>
         </div>
+        
+        <!-- Trust Badges -->
+      <div class="trust-badges animated">
+    <div class="badge-item hover-effect">
+        <div class="icon-wrapper">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <h4>Verified Products</h4>
+        <p>Rigorously tested for quality assurance</p>
+    </div>
+    <div class="badge-item hover-effect">
+        <div class="icon-wrapper">
+            <i class="fas fa-bolt"></i>
+        </div>
+        <h4>Fast Shipping</h4>
+        <p>Same-day dispatch for orders before 3PM</p>
+    </div>
+    <div class="badge-item hover-effect">
+        <div class="icon-wrapper">
+            <i class="fas fa-lock"></i>
+        </div>
+        <h4>Secure Checkout</h4>
+        <p>256-bit SSL encryption</p>
+    </div>
+</div>
     </header>
 
-    <!-- Featured Products -->
-    <section id="featured" class="py-5">
+    <!-- Featured Products Slider -->
+    <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Featured Products</h2>
-            <div class="row">
-                <!-- Product 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 product-card">
-                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">Best Seller</span>
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Wireless Earbuds Pro</h5>
-                            <div class="mb-2">
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </span>
-                                <span class="ms-1">(1,243)</span>
-                            </div>
-                            <p class="card-text">Premium sound quality with active noise cancellation and 30-hour battery life.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h5">$129.99</span>
-                                    <small class="text-muted text-decoration-line-through ms-2">$179.99</small>
+            <div id="featuredProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Wireless+Earbuds" class="card-img-top" alt="Wireless Earbuds">
+                                    <div class="card-body">
+                                        <span class="badge bg-success mb-2">Best Seller</span>
+                                        <h5 class="card-title">Wireless Earbuds Pro</h5>
+                                        <p class="card-text">High-quality sound with active noise cancellation and 30-hour battery life.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$99.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="https://www.amazon.com" target="_blank" class="btn btn-sm btn-primary affiliate-link">Buy Now</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Smart+Watch" class="card-img-top" alt="Smart Watch">
+                                    <div class="card-body">
+                                        <span class="badge bg-warning text-dark mb-2">Trending</span>
+                                        <h5 class="card-title">Smart Watch X5</h5>
+                                        <p class="card-text">Track fitness, heart rate & notifications with this premium smartwatch.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$149.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Bluetooth+Speaker" class="card-img-top" alt="Bluetooth Speaker">
+                                    <div class="card-body">
+                                        <span class="badge bg-info mb-2">New</span>
+                                        <h5 class="card-title">Portable Bluetooth Speaker</h5>
+                                        <p class="card-text">360° immersive sound with 20 hours playtime and waterproof design.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$79.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Wireless+Charger" class="card-img-top" alt="Wireless Charger">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fast Wireless Charger</h5>
+                                        <p class="card-text">15W fast wireless charging pad compatible with all Qi-enabled devices.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$39.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Tablet" class="card-img-top" alt="Tablet">
+                                    <div class="card-body">
+                                        <span class="badge bg-danger mb-2">Limited Stock</span>
+                                        <h5 class="card-title">10" Android Tablet</h5>
+                                        <p class="card-text">Full HD display, 128GB storage, and 10-hour battery life.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$199.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 product-card">
+                                    <img src="https://via.placeholder.com/300x200?text=Power+Bank" class="card-img-top" alt="Power Bank">
+                                    <div class="card-body">
+                                        <h5 class="card-title">20,000mAh Power Bank</h5>
+                                        <p class="card-text">Dual USB ports with 18W fast charging for all your devices.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="price h5 mb-0">$29.99</p>
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 product-card">
-                        <span class="badge bg-success position-absolute top-0 end-0 m-2">Deal</span>
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Smart Fitness Tracker</h5>
-                            <div class="mb-2">
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="ms-1">(892)</span>
-                            </div>
-                            <p class="card-text">Track your heart rate, sleep patterns, and activity with 24/7 monitoring.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h5">$79.99</span>
-                                    <small class="text-muted text-decoration-line-through ms-2">$99.99</small>
-                                </div>
-                                <a href="https://www.amazon.com" target="_blank" class="btn btn-sm btn-primary affiliate-link">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 product-card">
-                        <span class="badge bg-info position-absolute top-0 end-0 m-2">New</span>
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Air Fryer XL</h5>
-                            <div class="mb-2">
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                <span class="ms-1">(2,451)</span>
-                            </div>
-                            <p class="card-text">Healthy cooking with 75% less fat than traditional frying methods.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h5">$89.99</span>
-                                    <small class="text-muted text-decoration-line-through ms-2">$119.99</small>
-                                </div>
-                                <a href="https://www.amazon.com" target="_blank" class="btn btn-sm btn-primary affiliate-link">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredProductsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredProductsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter bg-light py-5">
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">All Products</h2>
+            
+            <!-- Category Filter -->
+            <div class="row mb-4">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group">
+                        <select class="form-select" id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="audio">Audio</option>
+                            <option value="wearables">Wearables</option>
+                            <option value="mobile">Mobile Accessories</option>
+                            <option value="smart-home">Smart Home</option>
+                        </select>
+                        <button class="btn btn-outline-primary" type="button" id="filterButton">Filter</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product cards would go here -->
+                <!-- ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Customer Reviews</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The wireless earbuds are amazing! The sound quality is exceptional and the battery lasts forever."</p>
+                            <h5 class="card-title mt-3">- Sarah J.</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- More review cards -->
+                <!-- ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2>Get Exclusive Deals</h2>
-                    <p class="lead">Subscribe to our newsletter for weekly product recommendations and special discounts</p>
-                    <form class="mt-4">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email address" required>
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
-                        <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-5">Contact Us</h2>
+                    <form id="contactForm">
+                        <!-- Contact form fields -->
+                        <!-- ... -->
                     </form>
                 </div>
             </div>
@@ -180,63 +292,28 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5>AffiliatePro</h5>
-                    <p>Helping you discover the best products through honest reviews and recommendations.</p>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Amazon Deals</h5>
+                    <p>Your trusted source for honest tech product reviews and recommendations.</p>
                     <div class="social-icons">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Home</a></li>
-                        <li><a href="#" class="text-white">About</a></li>
-                        <li><a href="#" class="text-white">Contact</a></li>
-                        <li><a href="#" class="text-white">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h5>Categories</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Electronics</a></li>
-                        <li><a href="#" class="text-white">Home</a></li>
-                        <li><a href="#" class="text-white">Fitness</a></li>
-                        <li><a href="#" class="text-white">Beauty</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">Terms of Service</a></li>
-                        <li><a href="#" class="text-white">Affiliate Disclosure</a></li>
-                        <li><a href="#" class="text-white">DMCA</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4 bg-secondary">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 AffiliatePro. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">As an Amazon Associate we earn from qualifying purchases.</p>
-                </div>
+                <!-- Footer columns -->
+                <!-- ... -->
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

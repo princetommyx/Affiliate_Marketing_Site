@@ -1,36 +1,233 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #131921 0%, #232f3e 100%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-image {
+    flex: 1;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-image img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-timer {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.timer-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    min-width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.timer-box:hover {
+    transform: translateY(-5px);
+}
+
+.timer-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    color: #ff9900;
+    transition: all 0.3s ease;
+}
+
+.timer-box span.number-change {
+    animation: pulse 0.5s ease;
+}
+
+.timer-box small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.hero-buttons .btn {
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-warning {
+    background-color: #ff9900;
+    border-color: #ff9900;
+}
+
+.hero-buttons .btn-warning:hover {
+    background-color: #e88a00;
+    border-color: #e88a00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(232, 138, 0, 0.3);
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.enhanced .badge-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.enhanced .badge-item:hover {
+    transform: translateY(-5px);
+}
+
+.badge-icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.badge-title {
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.badge-description {
+    font-size: 0.9em;
+    color: #666;
     text-align: center;
 }
 
-main {
-    padding: 1rem;
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
 }
 
-.product {
-    border: 1px solid #ccc;
-    margin-bottom: 1rem;
-    padding: 1rem;
+.badge-item:hover {
+    transform: scale(1.05);
 }
 
-.affiliate-link {
-    background-color: #f0c14b;
-    color: #111;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+.sale-started-banner {
+    animation: bounceIn 0.8s ease-out;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .countdown-timer {
+        justify-content: center;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-timer {
+        gap: 0.5rem;
+    }
+    
+    .timer-box {
+        min-width: 70px;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .timer-box span {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 }
